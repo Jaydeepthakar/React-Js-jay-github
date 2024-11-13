@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function FormTable() {
   const [formData, setFormData] = useState({ name: "", city: "", age: "" });

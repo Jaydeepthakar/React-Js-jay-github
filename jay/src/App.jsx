@@ -1,6 +1,7 @@
 // import State from './State'
 import './App.css'
-import FormTable from './FormTable'
+import Comment from './Comment'
+// import FormTable from './FormTable'
 // import Lifecycle from './lifecycle'
 // import Counter from './Counter'
 // import Prop from './Prop'
@@ -23,8 +24,8 @@ function App() {
         {/* <Lifecycle /> */}
         {/* <Prop array = {arr} studentdata={student} /> */}
         {/* <State /> */}
-        <FormTable/>
-        
+        {/* <FormTable/> */}
+        <Comment />
 
 
     </>
