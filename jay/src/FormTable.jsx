@@ -1,8 +1,10 @@
 import { useState } from "react";
+import './App.css';
 
 function FormTable() {
   const [formData, setFormData] = useState({ name: "", city: "", age: "" });
   const [dataList, setDataList] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -16,7 +18,7 @@ function FormTable() {
     e.preventDefault();
     if (formData.name && formData.city && formData.age) {
       setDataList((prevList) => [...prevList, formData]);
-      setFormData({ name: "", city: "", age: "" }); // Reset form
+      setFormData({ name: "", city: "", age: "" });
     }
   };
 
@@ -26,7 +28,19 @@ function FormTable() {
 
   const handleReset = () => {
     setDataList([]);
+    setSearchTerm("");
   };
+
+  const handleSearch = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  // Filter data based on the search term
+  const filteredData = dataList.filter((data) =>
+    Object.values(data).some((value) =>
+      value.toLowerCase().includes(searchTerm.toLowerCase())
+    )
+  );
 
   return (
     <div>
@@ -61,6 +75,14 @@ function FormTable() {
         </button>
       </form>
 
+      {/* Search Input */}
+      <input
+        type="text"
+        placeholder="Search..."
+        value={searchTerm}
+        onChange={handleSearch}
+      />
+
       <table>
         <thead>
           <tr>
@@ -71,7 +93,7 @@ function FormTable() {
           </tr>
         </thead>
         <tbody>
-          {dataList.map((data, index) => (
+          {filteredData.map((data, index) => (
             <tr key={index}>
               <td>{data.name}</td>
               <td>{data.city}</td>
