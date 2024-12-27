@@ -10,6 +10,7 @@ import CombinedDataPage from "./components/ApiPage/CombinedDataPage";
 import RandomAPI from "./components/ApiPage/RandomAPI";
 import Navbar from "./components/Navbar"; 
 import Footer from "./components/Footer"; 
+import FakeStore from "./components/ApiPage/FakeStore";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="/data-view" element={<DataViewPage />} />
           <Route path="/combined-data" element={<CombinedDataPage />}/>
           <Route path="/random-api" element={<RandomAPI />} />
+          <Route path="/fake-store" element={<FakeStore />} />
         </Routes>
       </div>
       <Footer /> {/* Include the Footer */}

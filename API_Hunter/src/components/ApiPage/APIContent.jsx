@@ -13,7 +13,7 @@ export default function APIContent() {
 
         <div className="row">
           {/* Card 1: First API Data */}
-          <div className="col-md-4">
+          <div className="col-md-3">
             <div className="card animated-card" onClick={() => navigate("/fetch-data")}>
               <img src="https://via.placeholder.com/150" className="card-img-top" alt="First API Call" />
               <div className="card-body">
@@ -24,7 +24,7 @@ export default function APIContent() {
           </div>
 
           {/* Card 2: Second API Data */}
-          <div className="col-md-4">
+          <div className="col-md-3">
             <div className="card animated-card" onClick={() => navigate("/combined-data")}>
               <img src="https://via.placeholder.com/150" className="card-img-top" alt="Second API Call with Images" />
               <div className="card-body">
@@ -35,12 +35,23 @@ export default function APIContent() {
           </div>
 
           {/* Card 3: Random API Data */}
-          <div className="col-md-4">
+          <div className="col-md-3">
             <div className="card animated-card" onClick={() => navigate("/random-api")}>
               <img src="https://via.placeholder.com/150" className="card-img-top" alt="Random API Call" />
               <div className="card-body">
                 <h5 className="card-title">Random API Data</h5>
                 <p className="card-text">Click to view refreshed data from a random API.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 4: Fake Store API */}
+          <div className="col-md-3">
+            <div className="card animated-card" onClick={() => navigate("/fake-store")}>
+              <img src="https://via.placeholder.com/150" className="card-img-top" alt="Fake Store API" />
+              <div className="card-body">
+                <h5 className="card-title">Fake Store API</h5>
+                <p className="card-text">Explore product data from the Fake Store API.</p>
               </div>
             </div>
           </div>

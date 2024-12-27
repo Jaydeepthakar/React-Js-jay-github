@@ -1,0 +1,18 @@
+.fake-store .card {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .fake-store .card-img-top {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .fake-store .card-title {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .fake-store .card-text {
+    margin-bottom: 0.5rem;
+  }
+  
