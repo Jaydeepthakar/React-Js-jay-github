@@ -1,0 +1,60 @@
+/* Basic container styling */
+.sign-in-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  /* Card styling for sign-in form */
+  .sign-in-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 8px;
+  }
+  
+  /* Form input fields */
+  .form-control {
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+  }
+  
+  .form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+  }
+  
+  /* Error message styling */
+  .error-message {
+    font-size: 14px;
+    color: #dc3545;
+  }
+  
+  /* Submit button styling */
+  .submit-button {
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Sign-up link styling */
+  .sign-up-link-text {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .sign-up-link-text:hover {
+    text-decoration: underline;
+  }
+  

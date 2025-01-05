@@ -15,5 +15,5 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
-export const database = getDatabase(app); // Realtime Database
-export const firestore = getFirestore(app); // Firestore Database
+export const database = getDatabase(app);
+export const firestore = getFirestore(app);   
