@@ -1,0 +1,119 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  /* Container for the application */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Main card styling */
+  .main {
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Header styling */
+  .corrent {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #007BFF;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Labels for form fields */
+  .amount {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  /* Input and Select Fields */
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: 0.3s;
+    outline: none;
+  }
+  
+  /* Focus state for inputs and selects */
+  .input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Convert Button */
+  button {
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+  }
+  
+  /* Button hover state */
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Converted Amount Section */
+  h3 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #007BFF;
+  }
+  
+  p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .main {
+      padding: 15px;
+    }
+  
+    .corrent {
+      font-size: 1.2rem;
+    }
+  
+    .input {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  
+    button {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+  }
+  
